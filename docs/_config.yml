@@ -29,6 +29,8 @@ github_username:  jekyll
 
 # Build settings
 remote_theme: LeNPaul/academic
+# For local development
+# theme: academic-jekyll-theme
 plugins:
   - jekyll-feed
 
