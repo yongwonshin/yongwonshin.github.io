@@ -1,0 +1,6 @@
+menu:
+- {name: 'Publications', url: '/publications'}
+- {name: 'CV', url: '/cv'}
+
+social:
+- {icon: 'github', link: 'https://github.com/yongwonshin'}
