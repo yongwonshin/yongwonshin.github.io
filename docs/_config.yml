@@ -28,7 +28,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-theme: academic-jekyll-theme
+remote_theme: LeNPaul/academic
 plugins:
   - jekyll-feed
 
