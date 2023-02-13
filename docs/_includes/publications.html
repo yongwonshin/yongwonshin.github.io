@@ -3,19 +3,25 @@
     <h3 class="fw-bold border-bottom pb-3 mb-3">Publications</h3>
     {% if page.title == "Home" %}
       {% for paper in site.data.publications.selected %}
-        <p><b>[{{ paper.abbr }}]</b> {{ paper.title }}
+      <p>
+        <div><b>[{{ paper.abbr }} {{ paper.year }}]</b> {{ paper.title }}
         {% if paper.pdf %}<a href="{{ paper.pdf }}">[PDF]</a>{% endif %}
         {% if paper.slide %}<a href="{{ paper.slide }}">[Slide]</a>{% endif %}
-        </p>
-        <p>{{ paper.author | markdownify }}</p>
+        </div>
+        <div>{{ paper.author | replace: "Yongwon Shin", "__<u>Yongwon Shin</u>__<sup>\\*</sup>" | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+        <div>{{ paper.desc }}</div>
+      </p>
       {% endfor %}
     {% else %}
       {% for paper in site.data.publications.selected %}
-        <p><b>[{{ paper.abbr }}]</b> {{ paper.title }}
+      <p>
+        <div><b>[{{ paper.abbr }} {{ paper.year }}]</b> {{ paper.title }}
         {% if paper.pdf %}<a href="{{ paper.pdf }}">[PDF]</a>{% endif %}
         {% if paper.slide %}<a href="{{ paper.slide }}">[Slide]</a>{% endif %}
-        </p>
-        <p>{{ paper.author | markdownify }}</p>
+        </div>
+        <div>{{ paper.author | replace: "Yongwon Shin", "__<u>Yongwon Shin</u>__<sup>\\*</sup>" | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+        <div>{{ paper.desc }}</div>
+      </p>
       {% endfor %}
     {% endif %}
   </div>
