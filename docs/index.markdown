@@ -5,6 +5,6 @@
 layout: home
 title: "Home"
 ---
-I'm graduate student in Graduate School of Artificial Intelligence at POSTECH. I'm interested in developing compiler and runtime for Processing-in-Memory DRAM system.
+I'm graduate student in Graduate School of Artificial Intelligence at POSTECH. I'm interested in developing a compiler and runtime for modern heterogeneous systems.
 
 Lab homepage is at [SysLab](http://syslab.postech.ac.kr/)
