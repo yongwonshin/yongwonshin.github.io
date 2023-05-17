@@ -13,8 +13,8 @@ layout: default
       </div>
       <div class="col-md-10">
         {% for section in site.data.cv.education %}
-          <p class="fw-bold">{{ section.title }}</p>
-          <p>{{ section.description }}</p>
+        <p class="fw-bold">{{ section.title }}</p>
+        <p>{{ section.description }}</p>
         {% endfor %}
       </div>
     </div>
@@ -24,8 +24,19 @@ layout: default
       </div>
       <div class="col-md-10">
         {% for section in site.data.cv.academic-experience %}
-          <p class="fw-bold">{{ section.title }}</p>
-          <p>{{ section.description }}</p>
+        <p class="fw-bold">{{ section.title }}</p>
+        <p>{{ section.description }}</p>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="row g-5 mb-5">
+      <div class="col-md-2">
+        <h4>Scholarship</h4>
+      </div>
+      <div class="col-md-10">
+        {% for section in site.data.cv.scholarship %}
+        <p class="fw-bold">{{ section.title }}</p>
+        <p>{{ section.description }}</p>
         {% endfor %}
       </div>
     </div>
@@ -35,8 +46,8 @@ layout: default
       </div>
       <div class="col-md-10">
         {% for section in site.data.cv.working-experience %}
-          <p class="fw-bold">{{ section.title }}</p>
-          <p>{{ section.description }}</p>
+        <p class="fw-bold">{{ section.title }}</p>
+        <p>{{ section.description }}</p>
         {% endfor %}
       </div>
     </div>
@@ -46,8 +57,8 @@ layout: default
       </div>
       <div class="col-md-9">
         {% for section in site.data.cv.extracurricular-activities %}
-          <p class="fw-bold">{{ section.title }}</p>
-          <p>{{ section.description }}</p>
+        <p class="fw-bold">{{ section.title }}</p>
+        <p>{{ section.description }}</p>
         {% endfor %}
       </div>
     </div>
