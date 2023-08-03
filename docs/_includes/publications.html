@@ -5,6 +5,7 @@
     {% for paper in site.data.publications.selected %}
     <p>
     <div><b>[{{ paper.abbr }} {{ paper.year }}]</b> {{ paper.title }}
+      {% if paper.toappear %} (Accepted) {% endif %}
       {% if paper.pdf %}<a href="{{ paper.pdf }}">[PDF]</a>{% endif %}
       {% if paper.slide %}<a href="{{ paper.slide }}">[Slide]</a>{% endif %}
     </div>
