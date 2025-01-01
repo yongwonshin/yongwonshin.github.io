@@ -9,9 +9,10 @@
       {% if paper.pdf %}<a href="{{ paper.pdf }}">[PDF]</a>{% endif %}
       {% if paper.slide %}<a href="{{ paper.slide }}">[Slide]</a>{% endif %}
     </div>
-    <div>{{ paper.author | replace: "Yongwon Shin", "__<u>Yongwon Shin</u>__"
+    <div>{{ paper.author | replace: "Yongwon Shin", "__Yongwon Shin__"
       | markdownify | remove: '<p>' | remove: '</p>' }}</div>
     <div>{{ paper.desc }}</div>
+    {% if paper.pub %}<div><a href="{{ paper.url }}">[ {{ paper.pub }} ]</a></div> {% endif %}
     </p>
     {% endfor %}
     {% else %}
@@ -21,9 +22,10 @@
       {% if paper.pdf %}<a href="{{ paper.pdf }}">[PDF]</a>{% endif %}
       {% if paper.slide %}<a href="{{ paper.slide }}">[Slide]</a>{% endif %}
     </div>
-    <div>{{ paper.author | replace: "Yongwon Shin", "__<u>Yongwon Shin</u>__"
+    <div>{{ paper.author | replace: "Yongwon Shin", "__Yongwon Shin__"
       | markdownify | remove: '<p>' | remove: '</p>' }}</div>
     <div>{{ paper.desc }}</div>
+    {% if paper.pub %}<div><a href="{{ paper.url }}">[ {{ paper.pub }} ]</a></div> {% endif %}
     </p>
     {% endfor %}
     {% endif %}
