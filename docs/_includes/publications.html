@@ -12,7 +12,9 @@
     <div>{{ paper.author | replace: "Yongwon Shin", "__Yongwon Shin__"
       | markdownify | remove: '<p>' | remove: '</p>' }}</div>
     <div>{{ paper.desc }}</div>
-    {% if paper.pub %}<div><a href="{{ paper.url }}">[ {{ paper.pub }} ]</a></div> {% endif %}
+    {% if paper.pub and paper.pub != "" %}
+    <div><a href="{{ paper.url }}">[ {{ paper.pub }} ]</a></div>
+    {% endif %}
     </p>
     {% endfor %}
     {% else %}
@@ -25,7 +27,9 @@
     <div>{{ paper.author | replace: "Yongwon Shin", "__Yongwon Shin__"
       | markdownify | remove: '<p>' | remove: '</p>' }}</div>
     <div>{{ paper.desc }}</div>
-    {% if paper.pub %}<div><a href="{{ paper.url }}">[ {{ paper.pub }} ]</a></div> {% endif %}
+    {% if paper.pub and paper.pub != "" %}
+    <div><a href="{{ paper.url }}">[ {{ paper.pub }} ]</a></div>
+    {% endif %}
     </p>
     {% endfor %}
     {% endif %}
