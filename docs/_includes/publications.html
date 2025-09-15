@@ -13,7 +13,11 @@
       | markdownify | remove: '<p>' | remove: '</p>' }}</div>
     <div>{{ paper.desc }}</div>
     {% if paper.pub and paper.pub != "" %}
-    <div><a href="{{ paper.url }}">[ {{ paper.pub }} ]</a></div>
+    <div><a href="{{ paper.url }}">[ {{ paper.pub }} ]</a>
+    {% if paper.pub2 and paper.pub2 != "" %}
+    <a href="{{ paper.url2 }}">[ {{ paper.pub2 }} ]</a>
+    {% endif %}
+    </div>
     {% endif %}
     </p>
     {% endfor %}
